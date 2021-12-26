@@ -2,6 +2,8 @@
 def fibrecur(n):
     if n == 0:
         return 0
+    elif (n<1):
+        print("Please enter a positive number")
     elif (n==1):
         return 1
     else:
@@ -26,6 +28,6 @@ def fibiter(n):
         print("Please enter a positive number")
 
 if __name__ == '__main__':
-    num = 9
+    num = int(input("Enter a number: "))
     print("Number using recurssive method is: ", fibrecur(num))
     print("Number using Iterative method is: ", fibiter(num))
